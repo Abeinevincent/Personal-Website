@@ -1,0 +1,119 @@
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: teal;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-left: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.active{
+    background: rgb(2, 90, 90);
+}
+
+.active .hambugerMenu span:first-child{
+    background-color: white!important;
+    transform: rotate(45deg)
+}
+
+.active .hambugerMenu span:nth-child(2){
+   opacity: 0;
+}
+
+.active .hambugerMenu span:last-child{
+   background-color: white!important;
+   transform: rotate(-45deg)
+}
+
+/* Navbar Left */
+.navbarLogo h2{
+    color: inherit;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Navbar Center */
+.navbarCenter{
+    display: flex;
+}
+
+.navbarCenterItem{
+    font-weight: 600;
+}
+
+.navbarCenterItem a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.navbarCenterItem:first-child{
+    margin-right: 10px;
+}
+
+.navbarCenterItem:last-child{
+    margin-left: 10px;
+}
+
+.navbarCenterItem .icon{
+    margin-right: 10px;
+}
+
+/* Navbar Right */
+.hambugerMenu{
+    width: 32px;
+    height: 24px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+
+.hambugerMenu .line{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    z-index: 2;
+    transform-origin: left;
+    transition: all 2s ease;
+}
+
+
+
+
+@media screen and (max-width: 767px){
+    .navbar{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    /* Navbar Left */
+    .navbarLogo h2{
+        font-size: 30px;
+    }
+
+    /* Navbar Center */
+    .navbarCenterItem{
+        font-weight: 600;
+    }
+
+    .navbarCenterItem span.phoneNumber,
+    .navbarCenterItem span.emailAddress {
+        display: none;
+    }
+
+    .hambugerMenu{
+        width: 28px;
+        height: 20px;
+        display: flex;
+    }
+}
+

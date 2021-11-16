@@ -1,0 +1,63 @@
+.menu {
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(2, 90, 90);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+  
+  .active{
+      right: 0;
+      transition: all 1s ease;
+  }
+  
+  .menuList{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 35px;
+      font-weight: 500;
+      width: 70%;
+      color: white;
+  }
+  
+  .menuList li{
+      margin-bottom: 30px;
+  }
+  
+  .menuList li:hover{
+      font-weight: 600;
+  }
+  
+  .menuList li a{
+      font-size: inherit;
+      color: inherit;
+      text-decoration: none;
+  }
+
+  @media screen and (max-width: 767px){
+    .menu {
+        width: 250px;
+        right: -250px;
+      }
+      
+      .active{
+          right: 0;
+          transition: all 1s ease;
+      }
+      
+      .menuList{
+          font-size: 30px;
+      }
+      
+      .menuList li{
+          margin-bottom: 30px;
+      }
+  }

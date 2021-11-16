@@ -1,0 +1,154 @@
+.about{
+    display: flex;
+    color: white;
+    width:  100vw;
+    height: calc(100vh - 60px);
+}
+
+.aboutLeft{
+    flex: 6;
+    background: white;
+    
+}
+
+.imgContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.aboutImg{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.aboutRight{
+    flex: 6;
+    background: rgb(201, 253, 253);
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightTop{
+    padding: 40px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.rightTop h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.rightTop h1{
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.rightTop p span{
+    color: crimson;
+}
+
+.rightBottom{
+    padding: 40px;
+}
+
+.rightBottom p{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .about{
+        display: flex;
+        color: white;
+        background: gray;
+        width:  100vw;
+        height: calc(100vh - 60px);
+        flex-direction: column;
+    }
+    
+    .aboutLeft{
+        flex: 6;
+        background: white;
+        
+    }
+    
+    .imgContainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .aboutImg{
+        width: 250px;
+        height: 250px;
+    }
+
+    .aboutRight{
+        width: auto;
+    }
+    
+    .rightTop{
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        overflow: hidden;
+    }
+    
+    .rightTop h3{
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    
+    .rightTop h1{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    
+    .rightTop p span{
+        color: crimson;
+    }
+    
+    .rightBottom{
+        padding: 10px;
+        overflow: hidden;
+    }
+    
+    .rightBottom p{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .rightTop h3{
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+    .rightTop h1{
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+
+    .rightTop p{
+        margin-bottom: 5px;
+    }
+
+    .rightBottom p{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,100 @@
+.home{
+    display: flex;
+    background: url("../../fundmee.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    color: white;
+    background-color: black;
+    width:  100vw;
+    height: calc(100vh - 60px);
+}
+
+.homeLeft{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25%;
+    margin-right: 50%;
+}
+
+.homeLeft h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.homeLeft h1{
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.homeLeft p{
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.homeLeft p span{
+    font-size: 25px;
+    color: crimson;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .homeLeft{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 35%;
+        margin-right: 40%;
+    }
+    
+    .homeLeft h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .homeLeft h1{
+        font-size: 55px;
+        margin-top: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .homeLeft{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 35%;
+        margin-right: 40%;
+    }
+
+    .homeLeftContainer{
+        width: 100%;
+    }
+    
+    .homeLeft h3{
+        font-size: 22px;
+    }
+    
+    .homeLeft h1{
+        font-size: 30px;
+        margin-top: 20px;
+        font-weight: 600;
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .homeLeft p{
+        font-size: 25px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+}
